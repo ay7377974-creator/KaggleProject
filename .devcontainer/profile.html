@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Webpage | Ashish (Week 2 Project)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">A</span>
+        <span>Ashish <small style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">| Frontend Dev</small></span>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle Navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html" class="active">Personal Profile</a></li>
+        <li><a href="register.html">Registration Form</a></li>
+        <li><a href="tasks.html">Internship Log</a></li>
+        <li class="nav-cta"><a href="register.html" class="btn btn-primary" style="padding: 0.5rem 1rem; color:#fff;">Register Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Week 2: Personal Profile Header with Photo & Bio -->
+      <section class="profile-header-card">
+        <div class="profile-avatar-large">
+          <span>A</span>
+        </div>
+        <div class="profile-intro">
+          <span class="badge">Week 2 Milestone Project</span>
+          <h1>Ashish</h1>
+          <h3>Aspiring Frontend Developer & B.Tech CSE Undergraduate</h3>
+          <p>
+            Enthusiastic computer science student at <strong>Vivekananda Global University, Jaipur</strong>. 
+            Focused on building clean, user-centric, responsive web experiences with HTML5, CSS3, and JavaScript. 
+            Recently completed a rigorous 1-month virtual Frontend Development Internship at SRAM-IQTECH, New Delhi.
+          </p>
+          <div class="profile-socials">
+            <span class="badge badge-success">University Roll: 25TEC2SE027</span>
+            <span class="badge badge-secondary">Grade A Certified</span>
+            <span class="badge badge-secondary">Open to Tech Collaborations</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile Main Details Grid -->
+      <div class="profile-grid">
+        <!-- Left Column: Biography & Education Table (Week 1 & 2) -->
+        <div>
+          <!-- About Section -->
+          <article class="card">
+            <h3>👤 Career Objective & About Me</h3>
+            <p style="margin-bottom: 1rem; color: var(--text-main);">
+              To leverage my knowledge of frontend web technologies, responsive layouts, and problem-solving skills to craft accessible, high-performance web applications. I enjoy transforming wireframes and designs into pixel-perfect, interactive code.
+            </p>
+            <p style="color: var(--text-muted);">
+              During my internship, I developed a strong appreciation for semantic HTML architecture, CSS Flexbox layout systems, and clean JavaScript logic.
+            </p>
+          </article>
+
+          <!-- Education Section with Styled Table (Week 1 & 2 Tasks) -->
+          <article class="card">
+            <h3>🎓 Educational Qualifications</h3>
+            <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-muted);">
+              Implemented using standard HTML table markup (<code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>) and styled with modern CSS.
+            </p>
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Degree / Course</th>
+                    <th>Institution / Board</th>
+                    <th>Year of Study</th>
+                    <th>Performance / Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>B.Tech in Computer Science & Engineering</strong></td>
+                    <td>Vivekananda Global University, Jaipur</td>
+                    <td>2025 – Present</td>
+                    <td><span class="badge badge-success">Pursuing (Roll: 25TEC2SE027)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Frontend Development Internship</strong></td>
+                    <td>SRAM-IQTECH, New Delhi</td>
+                    <td>Sept 2026</td>
+                    <td><span class="badge badge-success">Completed (Grade A)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Senior Secondary Education (Class XII)</strong></td>
+                    <td>CBSE Board</td>
+                    <td>2024</td>
+                    <td><span class="badge badge-secondary">First Division</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Secondary Education (Class X)</strong></td>
+                    <td>CBSE Board</td>
+                    <td>2022</td>
+                    <td><span class="badge badge-secondary">First Division</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- Hobbies & Extracurricular Activities (Week 2 Task) -->
+          <article class="card">
+            <h3>⭐ Hobbies & Personal Interests</h3>
+            <div class="hobbies-grid">
+              <div class="hobby-card">
+                <div class="hobby-icon">💻</div>
+                <h5>Web Coding</h5>
+              </div>
+              <div class="hobby-card">
+                <div class="hobby-icon">🧩</div>
+                <h5>Problem Solving</h5>
+              </div>
+              <div class="hobby-card">
+                <div class="hobby-icon">🎧</div>
+                <h5>Music</h5>
+              </div>
+              <div class="hobby-card">
+                <div class="hobby-icon">✍️</div>
+                <h5>Tech Blogging</h5>
+              </div>
+              <div class="hobby-card">
+                <div class="hobby-icon">⚽</div>
+                <h5>Sports & Fitness</h5>
+              </div>
+              <div class="hobby-card">
+                <div class="hobby-icon">🌐</div>
+                <h5>Open Source</h5>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Right Column: Skills, Tools & Quick Info -->
+        <aside>
+          <!-- Skills Gained (Week 1 & 2 Tasks) -->
+          <div class="card">
+            <h3>⚡ Technical Skills</h3>
+            <div class="skills-list">
+              <div>
+                <div class="skill-item-header">
+                  <span>HTML5 (Semantic & Forms)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="skill-item-header">
+                  <span>CSS3 & Flexbox Layouts</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="skill-item-header">
+                  <span>JavaScript Basics & DOM</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="skill-item-header">
+                  <span>Responsive Web Design</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="skill-item-header">
+                  <span>Git & GitHub Workflow</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools Used -->
+          <div class="card">
+            <h3>🛠️ Development Tools</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem;">
+                <span style="color:var(--primary-color);">✔</span> Visual Studio Code (IDE)
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem;">
+                <span style="color:var(--primary-color);">✔</span> Chrome DevTools & Console
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem;">
+                <span style="color:var(--primary-color);">✔</span> Git & GitHub Version Control
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem;">
+                <span style="color:var(--primary-color);">✔</span> Live Server Extension
+              </li>
+              <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem;">
+                <span style="color:var(--primary-color);">✔</span> MDN Web Documentation
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Action Card -->
+          <div class="card" style="background: linear-gradient(135deg, #1e293b, #0f172a); color: #ffffff;">
+            <h4 style="color: #60a5fa; margin-bottom: 0.6rem;">Explore Next Milestone</h4>
+            <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 1.25rem;">
+              Proceed to test the Student Registration Form built during Week 3 with complete JavaScript validation.
+            </p>
+            <a href="register.html" class="btn btn-primary" style="width: 100%;">Go to Registration Form →</a>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ashish Portfolio</h4>
+          <p>
+            Week 2 Milestone Project: Personal Profile Webpage with photo, education table, technical skill meters, and hobbies.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home / Landing Page</a></li>
+            <li><a href="profile.html">Personal Profile</a></li>
+            <li><a href="register.html">Student Registration Form</a></li>
+            <li><a href="tasks.html">5-Week Internship Logbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Curriculum Weeks</h4>
+          <ul class="footer-links">
+            <li><a href="tasks.html">Week 1: HTML & CSS Basics</a></li>
+            <li><a href="profile.html">Week 2: Profile Webpage</a></li>
+            <li><a href="register.html">Week 3: Registration Form</a></li>
+            <li><a href="index.html">Week 4 & 5: Landing Page & Polish</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mentor & Supervisor</h4>
+          <p><strong>Industry Mentor:</strong><br>Mr. Rishu Kumar (SRAM-IQTECH)</p>
+          <p style="margin-top:0.6rem;"><strong>Faculty Supervisor:</strong><br>Aryan Vashishtha (VGU Jaipur)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ashish (Roll: 25TEC2SE027) | Vivekananda Global University, Jaipur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

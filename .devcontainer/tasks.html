@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5-Week Internship Tasks Logbook | Ashish (SRAM-IQTECH)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">A</span>
+        <span>Ashish <small style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">| Frontend Dev</small></span>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle Navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Personal Profile</a></li>
+        <li><a href="register.html">Registration Form</a></li>
+        <li><a href="tasks.html" class="active">Internship Log</a></li>
+        <li class="nav-cta"><a href="register.html" class="btn btn-primary" style="padding: 0.5rem 1rem; color:#fff;">Register Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Section Title -->
+      <div class="section-title">
+        <span class="badge">Official Internship Daily Diary</span>
+        <h2>5-Week Frontend Internship Tasks</h2>
+        <p>
+          Complete 26-day record of daily assignments, technologies, learning outcomes, and verification stamps for Ashish (Roll: 25TEC2SE027) at SRAM-IQTECH.
+        </p>
+      </div>
+
+      <!-- Summary Stats Banner -->
+      <div class="stats-banner">
+        <div class="stat-box">
+          <div class="number">26</div>
+          <div class="title">Working Days Logged</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">208</div>
+          <div class="title">Total Hours Worked (8h/day)</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">5</div>
+          <div class="title">Curriculum Weeks</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">Grade A</div>
+          <div class="title">Performance Grade</div>
+        </div>
+      </div>
+
+      <!-- Filter Buttons Bar -->
+      <div class="tasks-filter-bar">
+        <button class="filter-btn active" data-week="all">All Weeks (26 Days)</button>
+        <button class="filter-btn" data-week="1">Week 1: HTML, CSS & JS Basics</button>
+        <button class="filter-btn" data-week="2">Week 2: Personal Profile Page</button>
+        <button class="filter-btn" data-week="3">Week 3: Student Registration Form</button>
+        <button class="filter-btn" data-week="4">Week 4: Landing Page & Responsive</button>
+        <button class="filter-btn" data-week="5">Week 5: UI Polish & Submission</button>
+      </div>
+
+      <div style="margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.95rem; color: var(--text-muted);">
+          Showing <strong id="taskCount" style="color: var(--primary-color);">26</strong> daily log records
+        </span>
+        <span class="badge badge-success">Status: 100% Completed & Verified</span>
+      </div>
+
+      <!-- Complete Log Table -->
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <div class="table-responsive">
+          <table class="custom-table log-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Week</th>
+                <th>Task / Work Assigned</th>
+                <th>Tools / Tech</th>
+                <th>Learning Outcomes / Skills</th>
+                <th>Hours</th>
+                <th>Industry Mentor</th>
+                <th>Faculty Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <!-- WEEK 1 -->
+              <tr class="task-row" data-week="1">
+                <td><strong>01-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>Introduction to HTML, basic tags and structure.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>HTML basics</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified (Rishu K.)</span></td>
+                <td><span class="verified-stamp">✓ Approved (Aryan V.)</span></td>
+              </tr>
+              <tr class="task-row" data-week="1">
+                <td><strong>02-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>HTML forms, tables and semantic elements.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Semantic HTML</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="1">
+                <td><strong>03-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>Introduction to CSS, selectors and properties.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>CSS basics</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="1">
+                <td><strong>04-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>CSS colors, backgrounds and text styling.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Color & text styling</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="1">
+                <td><strong>06-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>CSS box model, flexbox and layouts.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Layout design</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="1">
+                <td><strong>07-09-2026</strong></td>
+                <td><span class="task-tag">Week 1</span></td>
+                <td>Introduction to JavaScript, variables, Datatypes and syntax.</td>
+                <td><span class="badge">JavaScript</span></td>
+                <td>JS basics</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+
+              <!-- WEEK 2 -->
+              <tr class="task-row" data-week="2">
+                <td><strong>08-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Planning personal profile webpage structure.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Page planning</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="2">
+                <td><strong>09-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Building personal profile webpage structure.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Structure design</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="2">
+                <td><strong>10-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Styling personal profile webpage with CSS.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Styling</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="2">
+                <td><strong>11-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Enhancing personal profile webpage layout with CSS.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Layout enhancement</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="2">
+                <td><strong>13-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Adding photo, education and hobbies sections.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Content design</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="2">
+                <td><strong>14-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#e0e7ff; color:#4338ca;">Week 2</span></td>
+                <td>Finalizing and testing personal profile webpage.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Testing</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+
+              <!-- WEEK 3 -->
+              <tr class="task-row" data-week="3">
+                <td><strong>15-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Planning student registration form fields.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Form design</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="3">
+                <td><strong>16-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Building form structure - name, email, mobile.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Form elements</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="3">
+                <td><strong>17-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Adding gender, course and address fields.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Form elements</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="3">
+                <td><strong>18-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Adding dropdown and checkbox fields to form.</td>
+                <td><span class="badge">HTML</span></td>
+                <td>Form input types</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="3">
+                <td><strong>20-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Styling registration form with CSS.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Form styling</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="3">
+                <td><strong>21-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#ecfdf5; color:#065f46;">Week 3</span></td>
+                <td>Form validation and testing.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Validation</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+
+              <!-- WEEK 4 -->
+              <tr class="task-row" data-week="4">
+                <td><strong>22-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Planning landing page layout.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Layout planning</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="4">
+                <td><strong>23-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Building navigation bar and hero section.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Nav & hero section</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="4">
+                <td><strong>24-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Developing features/services section.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Features section</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="4">
+                <td><strong>25-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Developing testimonials/gallery section.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Content sections</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="4">
+                <td><strong>27-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Developing about section and footer.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>About & footer</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="4">
+                <td><strong>28-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fef3c7; color:#92400e;">Week 4</span></td>
+                <td>Making landing page responsive.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>Responsive design</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+
+              <!-- WEEK 5 -->
+              <tr class="task-row" data-week="5">
+                <td><strong>29-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fce7f3; color:#9d174d;">Week 5</span></td>
+                <td>Styling refinement and spacing.</td>
+                <td><span class="badge">CSS</span></td>
+                <td>UI polish</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+              <tr class="task-row" data-week="5">
+                <td><strong>30-09-2026</strong></td>
+                <td><span class="task-tag" style="background:#fce7f3; color:#9d174d;">Week 5</span></td>
+                <td>Final submission and review.</td>
+                <td><span class="badge">HTML, CSS</span></td>
+                <td>Completion</td>
+                <td>8 hrs</td>
+                <td><span class="verified-stamp">✓ Verified</span></td>
+                <td><span class="verified-stamp">✓ Approved</span></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ashish Portfolio</h4>
+          <p>
+            Complete 5-week internship task logbook recording 26 days of frontend development at SRAM-IQTECH, verified by industry mentors and academic faculty.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home / Landing Page</a></li>
+            <li><a href="profile.html">Personal Profile</a></li>
+            <li><a href="register.html">Student Registration Form</a></li>
+            <li><a href="tasks.html">5-Week Internship Logbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Curriculum Weeks</h4>
+          <ul class="footer-links">
+            <li><a href="tasks.html">Week 1: HTML & CSS Basics</a></li>
+            <li><a href="profile.html">Week 2: Profile Webpage</a></li>
+            <li><a href="register.html">Week 3: Registration Form</a></li>
+            <li><a href="index.html">Week 4 & 5: Landing Page & Polish</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mentor & Supervisor</h4>
+          <p><strong>Industry Mentor:</strong><br>Mr. Rishu Kumar (SRAM-IQTECH)</p>
+          <p style="margin-top:0.6rem;"><strong>Faculty Supervisor:</strong><br>Aryan Vashishtha (VGU Jaipur)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ashish (Roll: 25TEC2SE027) | Vivekananda Global University, Jaipur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

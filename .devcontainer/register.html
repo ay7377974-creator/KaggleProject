@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form | Week 3 Project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">A</span>
+        <span>Ashish <small style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">| Frontend Dev</small></span>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle Navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Personal Profile</a></li>
+        <li><a href="register.html" class="active">Registration Form</a></li>
+        <li><a href="tasks.html">Internship Log</a></li>
+        <li class="nav-cta"><a href="register.html" class="btn btn-primary" style="padding: 0.5rem 1rem; color:#fff;">Register Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Week 3: Student Registration Form Wrapper -->
+      <div class="form-wrapper">
+        <div class="form-header">
+          <span class="badge">Week 3 Milestone Project</span>
+          <h2>Student Registration Form</h2>
+          <p>
+            Complete academic enrollment form covering all Week 3 requirements: input fields, radio buttons, dropdowns, checkboxes, CSS styling, and interactive JavaScript validation.
+          </p>
+        </div>
+
+        <form id="studentRegistrationForm" novalidate>
+          <div class="form-grid">
+            
+            <!-- 16-09-2026: Full Name -->
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Ashish Sharma" required>
+              <span id="fullNameError" class="error-text">Please enter your full name.</span>
+            </div>
+
+            <!-- 16-09-2026: Email Address -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="e.g. ashish@vgu.ac.in" required>
+              <span id="emailError" class="error-text">Please enter a valid email address.</span>
+            </div>
+
+            <!-- 16-09-2026: Mobile Number -->
+            <div class="form-group">
+              <label for="mobile" class="form-label">Mobile Number <span class="required">*</span></label>
+              <input type="tel" id="mobile" class="form-control" placeholder="10-digit mobile number" maxlength="10" required>
+              <span id="mobileError" class="error-text">Please enter a valid 10-digit phone number.</span>
+            </div>
+
+            <!-- 17-09-2026: Gender Radio Buttons -->
+            <div class="form-group">
+              <label class="form-label">Gender <span class="required">*</span></label>
+              <div class="options-row" style="margin-top: 0.6rem;">
+                <label class="custom-option">
+                  <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label class="custom-option">
+                  <input type="radio" name="gender" value="Female"> Female
+                </label>
+                <label class="custom-option">
+                  <input type="radio" name="gender" value="Other"> Other
+                </label>
+              </div>
+              <span id="genderError" class="error-text">Please select your gender.</span>
+            </div>
+
+            <!-- 17-09-2026 & 18-09-2026: Course Selection Dropdown -->
+            <div class="form-group full-width">
+              <label for="course" class="form-label">Select Degree Programme / Course <span class="required">*</span></label>
+              <select id="course" class="form-control" required>
+                <option value="" disabled selected>-- Choose your course --</option>
+                <option value="btech-cse">B.Tech - Computer Science & Engineering</option>
+                <option value="btech-ai">B.Tech - Artificial Intelligence & Data Science</option>
+                <option value="btech-it">B.Tech - Information Technology</option>
+                <option value="bca">BCA - Bachelor of Computer Applications</option>
+                <option value="mca">MCA - Master of Computer Applications</option>
+                <option value="mtech">M.Tech - Software Engineering</option>
+              </select>
+              <span id="courseError" class="error-text">Please select a course from the list.</span>
+            </div>
+
+            <!-- 17-09-2026: Address Field -->
+            <div class="form-group full-width">
+              <label for="address" class="form-label">Permanent / Current Address <span class="required">*</span></label>
+              <textarea id="address" class="form-control" rows="3" placeholder="Enter complete residential address, city, state, pincode" required></textarea>
+              <span id="addressError" class="error-text">Please enter your address.</span>
+            </div>
+
+            <!-- 18-09-2026: Checkbox Fields (Technical Interests & Skills) -->
+            <div class="form-group full-width">
+              <label class="form-label">Areas of Technical Interest & Specialization (Check all that apply)</label>
+              <div class="checkbox-grid">
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="Frontend Development (HTML/CSS/JS)"> Frontend Development
+                </label>
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="Backend & Database Systems"> Backend & Database
+                </label>
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="Data Structures & Algorithms"> Data Structures & Algorithms
+                </label>
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="Cloud Computing & DevOps"> Cloud Computing & DevOps
+                </label>
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="UI/UX & Graphic Design"> UI/UX Design
+                </label>
+                <label class="custom-option">
+                  <input type="checkbox" name="skills" value="Open Source Contribution"> Open Source Contribution
+                </label>
+              </div>
+            </div>
+
+            <!-- Declaration & Terms Checkbox -->
+            <div class="form-group full-width">
+              <label class="custom-option">
+                <input type="checkbox" id="terms" required>
+                <span>I hereby declare that all details provided above are accurate and verified. <span class="required">*</span></span>
+              </label>
+              <span id="termsError" class="error-text">You must agree to the declaration before submitting.</span>
+            </div>
+
+          </div>
+
+          <!-- Form Actions: Submit and Reset Buttons -->
+          <div class="form-actions">
+            <button type="reset" class="btn btn-reset">↺ Reset Form</button>
+            <button type="submit" class="btn btn-primary">Submit Registration ✓</button>
+          </div>
+        </form>
+
+        <!-- 21-09-2026: Interactive Submission Result Card / Preview -->
+        <div id="submissionResult" class="result-card">
+          <div class="result-card-header">
+            <span style="font-size: 1.5rem;">🎉</span>
+            <h3 style="font-size: 1.25rem;">Registration Submitted & Validated Successfully!</h3>
+          </div>
+          <p style="color: #15803d; margin-bottom: 0.8rem; font-size: 0.92rem;">
+            The student registration data has passed all client-side JavaScript validation checks. Below is the verified record preview:
+          </p>
+          <div id="resultData" class="result-details">
+            <!-- Populated dynamically via js/script.js -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ashish Portfolio</h4>
+          <p>
+            Week 3 Milestone Project: Comprehensive Student Registration Form featuring client-side validation, clean inputs, and real-time response generation.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home / Landing Page</a></li>
+            <li><a href="profile.html">Personal Profile</a></li>
+            <li><a href="register.html">Student Registration Form</a></li>
+            <li><a href="tasks.html">5-Week Internship Logbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Curriculum Weeks</h4>
+          <ul class="footer-links">
+            <li><a href="tasks.html">Week 1: HTML & CSS Basics</a></li>
+            <li><a href="profile.html">Week 2: Profile Webpage</a></li>
+            <li><a href="register.html">Week 3: Registration Form</a></li>
+            <li><a href="index.html">Week 4 & 5: Landing Page & Polish</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mentor & Supervisor</h4>
+          <p><strong>Industry Mentor:</strong><br>Mr. Rishu Kumar (SRAM-IQTECH)</p>
+          <p style="margin-top:0.6rem;"><strong>Faculty Supervisor:</strong><br>Aryan Vashishtha (VGU Jaipur)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ashish (Roll: 25TEC2SE027) | Vivekananda Global University, Jaipur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
